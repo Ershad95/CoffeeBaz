@@ -921,6 +921,20 @@
           "bin/placeholder/CoffeeBaz.Client.dll": {}
         }
       },
+      "CoffeeBaz.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.4",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.4"
+        },
+        "compile": {
+          "bin/placeholder/CoffeeBaz.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CoffeeBaz.Data.dll": {}
+        }
+      },
       "CoffeeBaz.Shared/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -2577,6 +2591,11 @@
       "path": "../Client/CoffeeBaz.Client.csproj",
       "msbuildProject": "../Client/CoffeeBaz.Client.csproj"
     },
+    "CoffeeBaz.Data/1.0.0": {
+      "type": "project",
+      "path": "../CoffeeBaz.Data/CoffeeBaz.Data.csproj",
+      "msbuildProject": "../CoffeeBaz.Data/CoffeeBaz.Data.csproj"
+    },
     "CoffeeBaz.Shared/1.0.0": {
       "type": "project",
       "path": "../Shared/CoffeeBaz.Shared.csproj",
@@ -2586,6 +2605,7 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "CoffeeBaz.Client >= 1.0.0",
+      "CoffeeBaz.Data >= 1.0.0",
       "CoffeeBaz.Shared >= 1.0.0",
       "Microsoft.AspNetCore.Components.WebAssembly.Server >= 6.0.3",
       "Microsoft.EntityFrameworkCore >= 6.0.4",
@@ -2622,6 +2642,9 @@
           "projectReferences": {
             "C:\\Users\\Ershad Raoufi\\Desktop\\oout\\CoffeeBaz\\CoffeeBaz\\Client\\CoffeeBaz.Client.csproj": {
               "projectPath": "C:\\Users\\Ershad Raoufi\\Desktop\\oout\\CoffeeBaz\\CoffeeBaz\\Client\\CoffeeBaz.Client.csproj"
+            },
+            "C:\\Users\\Ershad Raoufi\\Desktop\\oout\\CoffeeBaz\\CoffeeBaz\\CoffeeBaz.Data\\CoffeeBaz.Data.csproj": {
+              "projectPath": "C:\\Users\\Ershad Raoufi\\Desktop\\oout\\CoffeeBaz\\CoffeeBaz\\CoffeeBaz.Data\\CoffeeBaz.Data.csproj"
             },
             "C:\\Users\\Ershad Raoufi\\Desktop\\oout\\CoffeeBaz\\CoffeeBaz\\Shared\\CoffeeBaz.Shared.csproj": {
               "projectPath": "C:\\Users\\Ershad Raoufi\\Desktop\\oout\\CoffeeBaz\\CoffeeBaz\\Shared\\CoffeeBaz.Shared.csproj"

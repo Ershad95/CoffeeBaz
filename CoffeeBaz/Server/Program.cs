@@ -1,11 +1,14 @@
+using CoffeeBaz.Data.Context;
 using Microsoft.AspNetCore.ResponseCompression;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
+// Add services to the container
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
+builder.Services.AddDbContext<CoffeBazContext>(options =>
+               options.UseSqlServer(builder.Configuration.GetConnectionString("ConnectionString")));
 
 var app = builder.Build();
 

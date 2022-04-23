@@ -9,6 +9,7 @@
       "CoffeeBaz.Server/1.0.0": {
         "dependencies": {
           "CoffeeBaz.Client": "1.0.0",
+          "CoffeeBaz.Data": "1.0.0",
           "CoffeeBaz.Shared": "1.0.0",
           "Microsoft.AspNetCore.Components.WebAssembly.Server": "6.0.3",
           "Microsoft.EntityFrameworkCore": "6.0.4",
@@ -615,6 +616,15 @@
           "CoffeeBaz.Client.dll": {}
         }
       },
+      "CoffeeBaz.Data/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.4",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.4"
+        },
+        "runtime": {
+          "CoffeeBaz.Data.dll": {}
+        }
+      },
       "CoffeeBaz.Shared/1.0.0": {
         "runtime": {
           "CoffeeBaz.Shared.dll": {}
@@ -1070,6 +1080,11 @@
       "hashPath": "system.windows.extensions.4.7.0.nupkg.sha512"
     },
     "CoffeeBaz.Client/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CoffeeBaz.Data/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

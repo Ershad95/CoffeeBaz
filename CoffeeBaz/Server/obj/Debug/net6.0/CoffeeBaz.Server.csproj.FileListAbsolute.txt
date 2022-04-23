@@ -79,3 +79,5 @@ C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz\Server\obj\Debug\net6.0\
 C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz\Server\obj\Debug\net6.0\CoffeeBaz.Server.pdb
 C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz\Server\obj\Debug\net6.0\CoffeeBaz.Server.genruntimeconfig.cache
 C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz\Server\obj\Debug\net6.0\ref\CoffeeBaz.Server.dll
+C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz\Server\bin\Debug\net6.0\CoffeeBaz.Data.dll
+C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz\Server\bin\Debug\net6.0\CoffeeBaz.Data.pdb
