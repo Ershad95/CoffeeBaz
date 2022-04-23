@@ -1,0 +1,12 @@
+C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz\Shared\bin\Debug\net6.0\CoffeeBaz.Shared.deps.json
+C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz\Shared\bin\Debug\net6.0\CoffeeBaz.Shared.dll
+C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz\Shared\bin\Debug\net6.0\CoffeeBaz.Shared.pdb
+C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz\Shared\obj\Debug\net6.0\CoffeeBaz.Shared.csproj.AssemblyReference.cache
+C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz\Shared\obj\Debug\net6.0\CoffeeBaz.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz\Shared\obj\Debug\net6.0\CoffeeBaz.Shared.AssemblyInfoInputs.cache
+C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz\Shared\obj\Debug\net6.0\CoffeeBaz.Shared.AssemblyInfo.cs
+C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz\Shared\obj\Debug\net6.0\CoffeeBaz.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz\Shared\obj\Debug\net6.0\CoffeeBaz.Shared.dll
+C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz\Shared\obj\Debug\net6.0\refint\CoffeeBaz.Shared.dll
+C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz\Shared\obj\Debug\net6.0\CoffeeBaz.Shared.pdb
+C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz\Shared\obj\Debug\net6.0\ref\CoffeeBaz.Shared.dll

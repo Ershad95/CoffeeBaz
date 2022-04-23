@@ -1,0 +1,12 @@
+C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz\CoffeeBaz.Service\bin\Debug\net6.0\CoffeeBaz.Service.deps.json
+C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz\CoffeeBaz.Service\bin\Debug\net6.0\CoffeeBaz.Service.dll
+C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz\CoffeeBaz.Service\bin\Debug\net6.0\CoffeeBaz.Service.pdb
+C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz\CoffeeBaz.Service\obj\Debug\net6.0\CoffeeBaz.Service.csproj.AssemblyReference.cache
+C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz\CoffeeBaz.Service\obj\Debug\net6.0\CoffeeBaz.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz\CoffeeBaz.Service\obj\Debug\net6.0\CoffeeBaz.Service.AssemblyInfoInputs.cache
+C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz\CoffeeBaz.Service\obj\Debug\net6.0\CoffeeBaz.Service.AssemblyInfo.cs
+C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz\CoffeeBaz.Service\obj\Debug\net6.0\CoffeeBaz.Service.csproj.CoreCompileInputs.cache
+C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz\CoffeeBaz.Service\obj\Debug\net6.0\CoffeeBaz.Service.dll
+C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz\CoffeeBaz.Service\obj\Debug\net6.0\refint\CoffeeBaz.Service.dll
+C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz\CoffeeBaz.Service\obj\Debug\net6.0\CoffeeBaz.Service.pdb
+C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz\CoffeeBaz.Service\obj\Debug\net6.0\ref\CoffeeBaz.Service.dll
