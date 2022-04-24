@@ -19,7 +19,9 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Client\CoffeeBaz.Client.csproj" />
+    <ProjectReference Include="..\CoffeeBaz.Core\CoffeeBaz.Core.csproj" />
     <ProjectReference Include="..\CoffeeBaz.Data\CoffeeBaz.Data.csproj" />
+    <ProjectReference Include="..\CoffeeBaz.Service\CoffeeBaz.Service.csproj" />
     <ProjectReference Include="..\Shared\CoffeeBaz.Shared.csproj" />
   </ItemGroup>
 

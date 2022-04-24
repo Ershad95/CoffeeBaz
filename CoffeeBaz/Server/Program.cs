@@ -1,5 +1,5 @@
+using CoffeeBaz.Core.Extentions;
 using CoffeeBaz.Data.Context;
-using Microsoft.AspNetCore.ResponseCompression;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,6 +10,8 @@ builder.Services.AddRazorPages();
 builder.Services.AddDbContext<CoffeBazContext>(options =>
                options.UseSqlServer(builder.Configuration.GetConnectionString("ConnectionString")));
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
+builder.Services.AddAllLocalServices();
 
 var app = builder.Build();
 
