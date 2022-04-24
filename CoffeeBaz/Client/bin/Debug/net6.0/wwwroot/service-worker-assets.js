@@ -73,6 +73,10 @@
       "url": "CoffeeBaz.Client.styles.css"
     },
     {
+      "hash": "sha256-uNYyaL9rpjmA2uF9zP55k5t9afAfIQUk0oArKTAeAS0=",
+      "url": "_framework\/AutoMapper.dll"
+    },
+    {
       "hash": "sha256-Ha5fdCPDxEzQSfpAqMldZhxAZGSoQpwYh8Onk\/zR2Bc=",
       "url": "_framework\/Microsoft.AspNetCore.Authorization.dll"
     },
@@ -857,19 +861,19 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-yV66HlJqYfRQqkDGgC3j\/xUl1o3lfgbqbOeeelU4zoc=",
+      "hash": "sha256-RTlRXbJ73HjIWhIa3I8pu8i\/vyJyYW\/KQ8STSzlRL2c=",
       "url": "_framework\/CoffeeBaz.Shared.dll"
     },
     {
-      "hash": "sha256-Hd37OmE1jM3vclaaes7QCuMPmRGzNgP5sT5A7znR0Tc=",
+      "hash": "sha256-xNmAI40g0KAkHkWyBk5CgyZqtODIchhBwiPS4lAcLz0=",
       "url": "_framework\/CoffeeBaz.Shared.pdb"
     },
     {
-      "hash": "sha256-38ql2ajH31V1q18s42K9YkU9nHChlQYqClbuRpSWpmI=",
+      "hash": "sha256-wmWNysBl\/1Wf2lDeNQG9gL+KCebE40rmJSZ4\/pUJXJo=",
       "url": "_framework\/CoffeeBaz.Client.dll"
     },
     {
-      "hash": "sha256-Jmx\/NVaP1GqfYJuTQpE74xyatPHYhU\/GjGXZQzUEZx0=",
+      "hash": "sha256-MVF8yVs62Z50zp6cNaXkZ6O9xggXeR01nKHEfYJls80=",
       "url": "_framework\/CoffeeBaz.Client.pdb"
     },
     {
@@ -877,9 +881,9 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-jvZAZ4AYhpm0GpuJTKQU2SZv0EEd1Hlljo4YBFELvvw=",
+      "hash": "sha256-HP7eWBXAi5HAj1EXDZbcKsMMdCLMmx082iQ2OXuDnuQ=",
       "url": "_framework\/blazor.boot.json"
     }
   ],
-  "version": "For2OZb8"
+  "version": "vcWhLdY6"
 };

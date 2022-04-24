@@ -41,88 +41,35 @@
         }
       },
       {
-        "HashCode": -1701736029,
+        "HashCode": -1671885486,
         "Kind": "Components.Component",
-        "Name": "CoffeeBaz.Client.Pages.Index",
+        "Name": "CoffeeBaz.Client.Shared.NavMenu",
         "AssemblyName": "CoffeeBaz.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Index"
+            "TagName": "NavMenu"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "CoffeeBaz.Client.Pages.Index"
+          "Common.TypeName": "CoffeeBaz.Client.Shared.NavMenu"
         }
       },
       {
-        "HashCode": 1259517081,
+        "HashCode": 44182456,
         "Kind": "Components.Component",
-        "Name": "CoffeeBaz.Client.Pages.Index",
+        "Name": "CoffeeBaz.Client.Shared.NavMenu",
         "AssemblyName": "CoffeeBaz.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "CoffeeBaz.Client.Pages.Index"
+            "TagName": "CoffeeBaz.Client.Shared.NavMenu"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "CoffeeBaz.Client.Pages.Index",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1803898085,
-        "Kind": "Components.Component",
-        "Name": "CoffeeBaz.Client.Shared.SurveyPrompt",
-        "AssemblyName": "CoffeeBaz.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "SurveyPrompt"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Title",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Title"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "CoffeeBaz.Client.Shared.SurveyPrompt"
-        }
-      },
-      {
-        "HashCode": -266748254,
-        "Kind": "Components.Component",
-        "Name": "CoffeeBaz.Client.Shared.SurveyPrompt",
-        "AssemblyName": "CoffeeBaz.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "CoffeeBaz.Client.Shared.SurveyPrompt"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Title",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Title"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "CoffeeBaz.Client.Shared.SurveyPrompt",
+          "Common.TypeName": "CoffeeBaz.Client.Shared.NavMenu",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -223,35 +170,88 @@
         }
       },
       {
-        "HashCode": -1671885486,
+        "HashCode": -1803898085,
         "Kind": "Components.Component",
-        "Name": "CoffeeBaz.Client.Shared.NavMenu",
+        "Name": "CoffeeBaz.Client.Shared.SurveyPrompt",
         "AssemblyName": "CoffeeBaz.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "NavMenu"
+            "TagName": "SurveyPrompt"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Title",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Title"
+            }
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "CoffeeBaz.Client.Shared.NavMenu"
+          "Common.TypeName": "CoffeeBaz.Client.Shared.SurveyPrompt"
         }
       },
       {
-        "HashCode": 44182456,
+        "HashCode": -266748254,
         "Kind": "Components.Component",
-        "Name": "CoffeeBaz.Client.Shared.NavMenu",
+        "Name": "CoffeeBaz.Client.Shared.SurveyPrompt",
         "AssemblyName": "CoffeeBaz.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "CoffeeBaz.Client.Shared.NavMenu"
+            "TagName": "CoffeeBaz.Client.Shared.SurveyPrompt"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Title",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Title"
+            }
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "CoffeeBaz.Client.Shared.NavMenu",
+          "Common.TypeName": "CoffeeBaz.Client.Shared.SurveyPrompt",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1701736029,
+        "Kind": "Components.Component",
+        "Name": "CoffeeBaz.Client.Pages.Index",
+        "AssemblyName": "CoffeeBaz.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "CoffeeBaz.Client.Pages.Index"
+        }
+      },
+      {
+        "HashCode": 1259517081,
+        "Kind": "Components.Component",
+        "Name": "CoffeeBaz.Client.Pages.Index",
+        "AssemblyName": "CoffeeBaz.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "CoffeeBaz.Client.Pages.Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "CoffeeBaz.Client.Pages.Index",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },

@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "BdlRukGGGyG07S93OLusVBG/nrK7boR9mKvvB9GAIH+FMNAsuHQtNRj0DynyWAIq8glJcgbe5IeIEH3tbjxqxw==",
+  "dgSpecHash": "Gbj0vLpiXJEPcTd6jOrOrX0V6V27ZYAsrMYnSGS8/aGvIuIHd3ggMc2s1sNinSUIzCvBauXKhSuoMzDxTVhJ4g==",
   "success": true,
   "projectFilePath": "C:\\Users\\Ershad Raoufi\\Desktop\\oout\\CoffeeBaz\\CoffeeBaz\\Client\\CoffeeBaz.Client.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Ershad Raoufi\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\Ershad Raoufi\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.3\\microsoft.aspnetcore.authorization.6.0.3.nupkg.sha512",
     "C:\\Users\\Ershad Raoufi\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.3\\microsoft.aspnetcore.components.6.0.3.nupkg.sha512",
     "C:\\Users\\Ershad Raoufi\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\6.0.3\\microsoft.aspnetcore.components.analyzers.6.0.3.nupkg.sha512",
@@ -12,6 +13,7 @@
     "C:\\Users\\Ershad Raoufi\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\6.0.3\\microsoft.aspnetcore.components.webassembly.6.0.3.nupkg.sha512",
     "C:\\Users\\Ershad Raoufi\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.devserver\\6.0.3\\microsoft.aspnetcore.components.webassembly.devserver.6.0.3.nupkg.sha512",
     "C:\\Users\\Ershad Raoufi\\.nuget\\packages\\microsoft.aspnetcore.metadata\\6.0.3\\microsoft.aspnetcore.metadata.6.0.3.nupkg.sha512",
+    "C:\\Users\\Ershad Raoufi\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Ershad Raoufi\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.0\\microsoft.extensions.configuration.6.0.0.nupkg.sha512",
     "C:\\Users\\Ershad Raoufi\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\Ershad Raoufi\\.nuget\\packages\\microsoft.extensions.configuration.binder\\6.0.0\\microsoft.extensions.configuration.binder.6.0.0.nupkg.sha512",

@@ -9,6 +9,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
 builder.Services.AddDbContext<CoffeBazContext>(options =>
                options.UseSqlServer(builder.Configuration.GetConnectionString("ConnectionString")));
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 var app = builder.Build();
 

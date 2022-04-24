@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace CoffeeBaz.Shared.DTO;
-public class Table:BaseDTO
+public class TableDTO:BaseDTO
 {
     public int ChairCount { get; set; }
     public bool Reserved { get; set; }

@@ -825,3 +825,7 @@ C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz\Client\obj\Debug\net6.0\
 C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz\Client\obj\Debug\net6.0\refint\CoffeeBaz.Client.dll
 C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz\Client\obj\Debug\net6.0\CoffeeBaz.Client.pdb
 C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz\Client\obj\Debug\net6.0\ref\CoffeeBaz.Client.dll
+C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz\Client\bin\Debug\net6.0\wwwroot\_framework\AutoMapper.dll
+C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz\Client\bin\Debug\net6.0\wwwroot\_framework\AutoMapper.dll.gz
+C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz\Client\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz\Client\obj\Debug\net6.0\build-gz\50ZU4AXB.gz

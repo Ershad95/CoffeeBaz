@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "dAadwILaELQ4Yeurrl0eS6i+ejYuASjb/exe7YyWBGV6Tk27FfEWT3HgoZORBVerbQDRN92tSDG+XGbY+70vVQ==",
+  "dgSpecHash": "b2vwO3Sfosh/6EfzxbCxyuiyzRrrgWOAVXhhmJ+mvApWECYFbqKNSIGesadVN16yOlcint/tL1umjEyB3uciww==",
   "success": true,
   "projectFilePath": "C:\\Users\\Ershad Raoufi\\Desktop\\oout\\CoffeeBaz\\CoffeeBaz\\Shared\\CoffeeBaz.Shared.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Ershad Raoufi\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
+    "C:\\Users\\Ershad Raoufi\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
+  ],
   "logs": []
 }
