@@ -5,10 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace CoffeeBaz.Shared.DTO;
+
+public class BaseDTO
 {
-    public class BaseDTO
-    {
-        public int Id { get; init; }
-        public DateTime CreatedDateTime{ get; init; }
-    }
+    public int Id { get; init; }
+    public DateTime CreatedDateTime { get; init; }
 }
+

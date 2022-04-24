@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CoffeeBaz.Data\CoffeeBaz.Data.csproj" />
+  </ItemGroup>
+
 </Project>

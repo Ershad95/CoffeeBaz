@@ -857,19 +857,19 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-0Tg1kt6KphtbzLdFIu8KRGfnZvcJU6stHy7akTzittI=",
+      "hash": "sha256-yV66HlJqYfRQqkDGgC3j\/xUl1o3lfgbqbOeeelU4zoc=",
       "url": "_framework\/CoffeeBaz.Shared.dll"
     },
     {
-      "hash": "sha256-e5TqxCjYu02qYfYLw\/Ike\/qegAfnZSkajU8ooh\/ES8Y=",
+      "hash": "sha256-Hd37OmE1jM3vclaaes7QCuMPmRGzNgP5sT5A7znR0Tc=",
       "url": "_framework\/CoffeeBaz.Shared.pdb"
     },
     {
-      "hash": "sha256-v+jRpkKi+DnhZrAo\/UD+CSBVsDyYw0T3OEVMpaIgg2E=",
+      "hash": "sha256-38ql2ajH31V1q18s42K9YkU9nHChlQYqClbuRpSWpmI=",
       "url": "_framework\/CoffeeBaz.Client.dll"
     },
     {
-      "hash": "sha256-LTcuFM5dRQhyliNbw4oWJm3htfrGv4hrJx3nnfi6\/Pw=",
+      "hash": "sha256-Jmx\/NVaP1GqfYJuTQpE74xyatPHYhU\/GjGXZQzUEZx0=",
       "url": "_framework\/CoffeeBaz.Client.pdb"
     },
     {
@@ -877,9 +877,9 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-HBNH3uIzkHB8F+Kv1qA9s8+PsLu+j6zdObaJVRSOkrQ=",
+      "hash": "sha256-jvZAZ4AYhpm0GpuJTKQU2SZv0EEd1Hlljo4YBFELvvw=",
       "url": "_framework\/blazor.boot.json"
     }
   ],
-  "version": "LgkNwDDe"
+  "version": "For2OZb8"
 };
