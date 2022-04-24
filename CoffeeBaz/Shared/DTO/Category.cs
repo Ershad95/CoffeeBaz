@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CoffeeBaz.Shared.DTO;
 
-public class Category: BaseEntity
+public class Category: BaseDTO
 {
     public string Name { get; set; }
     public string Image { get; set; }
