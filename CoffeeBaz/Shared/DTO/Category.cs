@@ -12,5 +12,6 @@ public class Category: BaseDTO
     public string Image { get; set; }
     public string Description { get; set; }
     public bool Vip { get; set; }
+    public bool Active { get; set; }
 }
 

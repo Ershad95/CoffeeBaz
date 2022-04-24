@@ -13,7 +13,7 @@ namespace CoffeeBaz.Data.Domain
         public string Description { get; set; }
         public bool Vip { get; set; }
         public decimal Price { get; set; }
-
+        public bool Active { get; set; }
         public int CatergoryId { get; set; }
         public virtual Category Category { get; set; }
     }
