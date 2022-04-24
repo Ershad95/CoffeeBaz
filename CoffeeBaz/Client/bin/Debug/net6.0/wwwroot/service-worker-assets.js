@@ -869,11 +869,11 @@
       "url": "_framework\/CoffeeBaz.Shared.pdb"
     },
     {
-      "hash": "sha256-wmWNysBl\/1Wf2lDeNQG9gL+KCebE40rmJSZ4\/pUJXJo=",
+      "hash": "sha256-yEpZlTxtr6z28ong6edhv1H19ocza2T70RUquHYfEn4=",
       "url": "_framework\/CoffeeBaz.Client.dll"
     },
     {
-      "hash": "sha256-MVF8yVs62Z50zp6cNaXkZ6O9xggXeR01nKHEfYJls80=",
+      "hash": "sha256-qehiHUQapYWapT2Y\/rF9SvDAMebkrtQZApQ+ntLmRuQ=",
       "url": "_framework\/CoffeeBaz.Client.pdb"
     },
     {
@@ -881,9 +881,9 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-HP7eWBXAi5HAj1EXDZbcKsMMdCLMmx082iQ2OXuDnuQ=",
+      "hash": "sha256-9WOzZXji1HwKzC7OKYSQuE5jA9hpG08+QFhrbhIzg3M=",
       "url": "_framework\/blazor.boot.json"
     }
   ],
-  "version": "vcWhLdY6"
+  "version": "DVbSo26Y"
 };
