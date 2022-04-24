@@ -197,15 +197,15 @@
       "mscorlib.dll": "sha256-tSv6NEbBsHuM5P3AUJGybafS0hxrXlzDmmcyG2eGk3I=",
       "netstandard.dll": "sha256-klcvWVyHimPfDxg6W1A076EKpCB5ySxjtc7sxJEsGgE=",
       "System.Private.CoreLib.dll": "sha256-Y8kdbfPQ0YoYLGbOgzRmoVsnuMYNlA1hvLvDWFTtzrk=",
-      "CoffeeBaz.Shared.dll": "sha256-RTlRXbJ73HjIWhIa3I8pu8i\/vyJyYW\/KQ8STSzlRL2c=",
-      "CoffeeBaz.Client.dll": "sha256-yEpZlTxtr6z28ong6edhv1H19ocza2T70RUquHYfEn4="
+      "CoffeeBaz.Shared.dll": "sha256-pb5UT1COn6w0\/mhKMGv48gs8DuE5JbMLi0+RbHiSuww=",
+      "CoffeeBaz.Client.dll": "sha256-iGIaM\/i8NZiwgtxJPSO4knvVJ0Hom0h6flrGx0RUgI8="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "CoffeeBaz.Shared.pdb": "sha256-xNmAI40g0KAkHkWyBk5CgyZqtODIchhBwiPS4lAcLz0=",
-      "CoffeeBaz.Client.pdb": "sha256-qehiHUQapYWapT2Y\/rF9SvDAMebkrtQZApQ+ntLmRuQ="
+      "CoffeeBaz.Shared.pdb": "sha256-zRNSfQ09ZxilbznGmmVEUmHE3V9TyLMo0xr3KttY70s=",
+      "CoffeeBaz.Client.pdb": "sha256-EYaj3mKAtdH2tv3HItyL5nXNcRu\/nu0SmYd4rXPNAr4="
     },
     "runtime": {
       "dotnet.6.0.3.h6mu8y6lxw.js": "sha256-pRmcHKZN4T\/YbX9dj6ITT4sNtkJ9w07OLcwl4645nPg=",
