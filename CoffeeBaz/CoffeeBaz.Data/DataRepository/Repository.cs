@@ -49,17 +49,17 @@ namespace CoffeeBaz.Data.DataRepository
             return Entity.ToList();
         }
 
-        public T GetById(int id)
+        public async Task<T> GetById(int id,CancellationToken cancellationToken)
         {
-            return Entity.FirstOrDefault(x => x.Id == id);
+            return await Entity.FirstOrDefaultAsync(x => x.Id == id);
         }
 
-        public bool Insert(T entity)
+        public async Task<bool> Insert(T entity,CancellationToken cancellationToken=default)
         {
             try
             {
                 _coffeBazContext.Add(entity);
-                _coffeBazContext.SaveChangesAsync();
+                await _coffeBazContext.SaveChangesAsync(cancellationToken);
                 return true;
             }
             catch (Exception)

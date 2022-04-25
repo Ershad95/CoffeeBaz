@@ -9,22 +9,22 @@ namespace CoffeeBaz.Service.ProductService
 {
     public class ProductService : IProductService
     {
-        public bool Delete(Product entity)
+        public Task<bool> Delete(Product entity, CancellationToken cancellationToken = default)
         {
             throw new NotImplementedException();
         }
 
-        public Product GetById(int id)
+        public Task<Product> GetById(int id, CancellationToken cancellationToken = default)
         {
             throw new NotImplementedException();
         }
 
-        public bool Insert(Product entity)
+        public Task<bool> Insert(Product entity, CancellationToken cancellationToken = default)
         {
             throw new NotImplementedException();
         }
 
-        public bool Update(Product entity)
+        public Task<bool> Update(Product entity, CancellationToken cancellationToken = default)
         {
             throw new NotImplementedException();
         }

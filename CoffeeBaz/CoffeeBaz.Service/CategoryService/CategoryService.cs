@@ -9,22 +9,22 @@ namespace CoffeeBaz.Service.CategoryService
 {
     public class CategoryService : ICategoryService
     {
-        public bool Delete(Category entity)
+        public Task<bool> Delete(Category entity, CancellationToken cancellationToken = default)
         {
             throw new NotImplementedException();
         }
 
-        public Category GetById(int id)
+        public Task<Category> GetById(int id, CancellationToken cancellationToken = default)
         {
             throw new NotImplementedException();
         }
 
-        public bool Insert(Category entity)
+        public Task<bool> Insert(Category entity, CancellationToken cancellationToken = default)
         {
             throw new NotImplementedException();
         }
 
-        public bool Update(Category entity)
+        public Task<bool> Update(Category entity, CancellationToken cancellationToken = default)
         {
             throw new NotImplementedException();
         }

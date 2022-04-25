@@ -17,6 +17,7 @@ namespace CoffeeBaz.Core.Extentions
             services.AddScoped<IProductService, ProductService>();
             services.AddScoped<IQrCodeService, QrCodeService>();
             services.AddScoped<ITableService, TableService>();
+            //services.AddScoped<CoffeeBaz.Data.Context.CoffeBazContext>();
         }
 
        

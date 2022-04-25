@@ -7,7 +7,7 @@ namespace CoffeeBaz.Data.DataRepository
     {
         IQueryable<Template> Entity { get; }
 
-        bool Insert(Template entity);
+        Task<bool> Insert(Template entity, CancellationToken cancellationToken = default);
         bool Update(Template entity);
         bool Delete(Template entity);
 
@@ -23,7 +23,7 @@ namespace CoffeeBaz.Data.DataRepository
         IList<Template> GetAll(int tableId=0,
             int productId=0,DateTime? startDate=null,
             DateTime? endDate=null);
-        Template GetById(int id);
+        Task<Template> GetById(int id,CancellationToken cancellationToken=default);
 
     }
 }

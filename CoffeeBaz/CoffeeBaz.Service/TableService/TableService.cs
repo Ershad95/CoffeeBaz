@@ -1,4 +1,5 @@
-﻿using CoffeeBaz.Data.Domain;
+﻿using CoffeeBaz.Data.DataRepository;
+using CoffeeBaz.Data.Domain;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,22 +10,27 @@ namespace CoffeeBaz.Service.TableService
 {
     public class TableService : ITableService
     {
-        public bool Delete(Table entity)
+        private readonly IRepository<Table> _repository;
+        public TableService(IRepository<Table> repository)
+        {
+            _repository = repository;
+        }
+        public async Task<bool> Delete(Table entity, CancellationToken cancellationToken)
         {
             throw new NotImplementedException();
         }
 
-        public Table GetById(int id)
+        public async Task<Table> GetById(int id,CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            return await _repository.GetById(id,cancellationToken);
         }
 
-        public bool Insert(Table entity)
+        public async Task<bool> Insert(Table entity,CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            return await _repository.Insert(entity,cancellationToken);
         }
 
-        public bool Update(Table entity)
+        public Task<bool> Update(Table entity, CancellationToken cancellationToken)
         {
             throw new NotImplementedException();
         }

@@ -8,9 +8,9 @@ namespace CoffeeBaz.Service
 {
     public interface IService<Entiry>
     {
-        bool Insert(Entiry entity);
-        bool Update(Entiry entity);
-        bool Delete(Entiry entity);
-        Entiry GetById(int id);
+         Task<bool> Insert(Entiry entity, CancellationToken cancellationToken=default);
+         Task<bool> Update(Entiry entity, CancellationToken cancellationToken = default);
+         Task<bool> Delete(Entiry entity, CancellationToken cancellationToken = default);
+         Task<Entiry> GetById(int id, CancellationToken cancellationToken=default);
     }
 }
