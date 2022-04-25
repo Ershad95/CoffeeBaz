@@ -1,4 +1,5 @@
-﻿using CoffeeBaz.Service.CategoryService;
+﻿using CoffeeBaz.Data.DataRepository;
+using CoffeeBaz.Service.CategoryService;
 using CoffeeBaz.Service.OrderService;
 using CoffeeBaz.Service.ProductService;
 using CoffeeBaz.Service.QrCode;
@@ -12,12 +13,12 @@ namespace CoffeeBaz.Core.Extentions
     {
         public static void AddAllLocalServices(this IServiceCollection services)
         {
-            services.AddScoped<IOrderService, OrderService>();
+            services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+            services.AddScoped<ITableService, TableService>();
             services.AddScoped<ICategoryService, CategoryService>();
             services.AddScoped<IProductService, ProductService>();
             services.AddScoped<IQrCodeService, QrCodeService>();
-            services.AddScoped<ITableService, TableService>();
-            //services.AddScoped<CoffeeBaz.Data.Context.CoffeBazContext>();
+            services.AddScoped<IOrderService, OrderService>();
         }
 
        
