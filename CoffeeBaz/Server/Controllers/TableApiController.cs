@@ -4,6 +4,8 @@ using CoffeeBaz.Service.TableService;
 using CoffeeBaz.Shared.DTO;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace CoffeeBaz.Server.Controllers
 {
@@ -24,7 +26,7 @@ namespace CoffeeBaz.Server.Controllers
             var table = await _tableService.GetById(id, cancellationToken);
             return  _mapper.Map<TableDTO>(table);
         }
-        [HttpPost()]
+        [HttpPost]
         public async Task<TableDTO> Post([FromBody] TableDTO tableDTO, CancellationToken cancellationToken)
         {
             var table = await _tableService.Insert(_mapper.Map<Table>(tableDTO), cancellationToken);

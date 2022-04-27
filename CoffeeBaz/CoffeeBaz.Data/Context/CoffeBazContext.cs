@@ -11,13 +11,22 @@ namespace CoffeeBaz.Data.Context
 {
     public class CoffeBazContext:DbContext
     {
-        
-      
-        public CoffeBazContext(DbContextOptions<CoffeBazContext> options): base(options){}
+        readonly IConfiguration configuration;
+        public CoffeBazContext(DbContextOptions<CoffeBazContext> options,IConfiguration configuration): base(options){
+        this.configuration = configuration;
+        }
 
         public DbSet<Table> Tables { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Order> Orders { get; set; }
         public DbSet<Product> Products { get; set; }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            if (!optionsBuilder.IsConfigured)
+            {
+                optionsBuilder.UseSqlServer(configuration.GetConnectionString("ConnectionString"));
+            }
+        }
     }
 }

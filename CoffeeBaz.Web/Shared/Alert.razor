@@ -1,0 +1,38 @@
+﻿<div class="align-content-center">
+    <div class=@classNames>
+        <b>@title</b>
+    </div>
+</div>
+@code {
+    [Parameter]
+    public string title { get; set; }
+    [Parameter]
+    public TypeAlert typeAlert { get; set; }
+    private string classNames = "";
+    public enum TypeAlert
+    {
+        Danger = -1,
+        Success = 1,
+        Info = 0
+    }
+
+    protected override Task OnInitializedAsync()
+    {
+        switch (typeAlert)
+        {
+            case TypeAlert.Danger:
+                classNames = "alert alert-danger";
+                break;
+            case TypeAlert.Success:
+                classNames = "alert alert-success";
+
+                break;
+            case TypeAlert.Info:
+                classNames = "alert alert-info";
+
+                break;
+        }
+        return base.OnInitializedAsync();
+    }
+
+}

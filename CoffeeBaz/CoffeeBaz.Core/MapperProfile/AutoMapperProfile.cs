@@ -13,6 +13,11 @@ public class AutoMapperProfile : Profile
         CreateMap<CategoryDTO, Category>();
         CreateMap<OrderDTO, Order>();
         CreateMap<TableDTO, Table>();
+
+        CreateMap<Product, ProductDTO>();
+        CreateMap<Category, CategoryDTO>();
+        CreateMap<Order, OrderDTO>();
+        CreateMap<Table, TableDTO>();
     }
 }
 

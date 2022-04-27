@@ -8,7 +8,7 @@ namespace CoffeeBaz.Data.Domain
 {
     public class BaseEntity
     {
-        public int Id { get; init; }
-        public DateTime CreatedDateTime{ get; init; }
+        public int Id { get; set; }
+        public DateTime CreatedDateTime{ get; set; }
     }
 }

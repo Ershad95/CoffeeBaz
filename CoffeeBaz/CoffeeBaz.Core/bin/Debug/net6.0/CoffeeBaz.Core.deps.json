@@ -28,6 +28,14 @@
           }
         }
       },
+      "Dapper/2.0.123": {
+        "runtime": {
+          "lib/net5.0/Dapper.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.123.33578"
+          }
+        }
+      },
       "Microsoft.CSharp/4.7.0": {},
       "Microsoft.Data.SqlClient/2.1.4": {
         "dependencies": {
@@ -489,6 +497,8 @@
       "CoffeeBaz.Service/1.0.0": {
         "dependencies": {
           "CoffeeBaz.Data": "1.0.0",
+          "CoffeeBaz.Shared": "1.0.0",
+          "Dapper": "2.0.123",
           "System.Drawing.Common": "5.0.2",
           "ZXing.Net": "0.16.6"
         },
@@ -518,6 +528,13 @@
       "sha512": "sha512-WIadGC1pIwbnyTubvI577p3F++Bsj9q2Q3OaAc1I0QS+JhupN1xkdrPBhI9bPIeg63zM81tZplUNYkqU1HE5jQ==",
       "path": "automapper/11.0.1",
       "hashPath": "automapper.11.0.1.nupkg.sha512"
+    },
+    "Dapper/2.0.123": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-RDFF4rBLLmbpi6pwkY7q/M6UXHRJEOerplDGE5jwEkP/JGJnBauAClYavNKJPW1yOTWRPIyfj4is3EaJxQXILQ==",
+      "path": "dapper/2.0.123",
+      "hashPath": "dapper.2.0.123.nupkg.sha512"
     },
     "Microsoft.CSharp/4.7.0": {
       "type": "package",

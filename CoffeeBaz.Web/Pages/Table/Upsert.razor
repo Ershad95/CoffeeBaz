@@ -1,0 +1,88 @@
+﻿@page "/table/upsert/{id:int}"
+@page "/table/upsert"
+@using AutoMapper
+@using CoffeeBaz.Service.TableService
+@using CoffeeBaz.Data.Domain
+@inject ITableService service
+@inject IMapper mapper
+@inject NavigationManager NavigationContext;
+@using CoffeeBaz.Shared.DTO
+<h1>@title</h1>
+@{
+    if (result){
+        <Alert title="میز مورد نظر با موفقعیت اضافه شد" 
+            typeAlert =@Alert.TypeAlert.Success></Alert>
+    }
+}
+<EditForm Model="@tableModel" OnValidSubmit="@HandleValidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div class="form-group">
+        <label for="exampleInputEmail1">تعداد صندلی ها:</label>
+        <InputNumber class="form-control" @bind-Value="tableModel.ChairCount" placeholder="تعداد صندلی های میز را مشخص کنید" />
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">شماره میز :‌</label>
+        <InputText class="form-control" @bind-Value="tableModel.Number" placeholder="شماره میز را مشخص کنید" />
+    </div>
+    <div class="form-group">
+
+        <InputCheckbox @bind-Value="tableModel.Reserved" />
+        <label for="exampleInputEmail1">این میز قبلا رزرو شده است؟</label>
+    </div>
+    <div class="form-group">
+
+        <InputCheckbox @bind-Value="tableModel.Active" />
+        <label for="exampleInputEmail1">میز فعال می باشد؟</label>
+    </div>
+    <div class="form-group">
+
+        <InputCheckbox @bind-Value="tableModel.Vip" />
+        <label for="exampleInputEmail1">میز VIP هست ؟ </label>
+    </div>
+    <div class="form-group">
+        <InputCheckbox @bind-Value="tableModel.CleanRequire" />
+        <label for="exampleInputEmail1">میز نیاز به تمیز شدن دارد؟</label>
+
+    </div>
+    <button type="submit" class="btn btn-success">@submitButtonTitle</button>
+    <button type="reset" class="btn btn-danger">خالی کردن اطلاعات</button>
+</EditForm>
+
+
+@code {
+
+    [Parameter]
+    public int id { get; set; }
+    private CoffeeBaz.Shared.DTO.TableDTO tableModel = new();
+    private string submitButtonTitle = "ثبت میز جدید";
+    private string title = "ثبت میز جدید";
+    bool result;
+    protected async override Task<Task> OnInitializedAsync()
+    {
+        if (id > 0)
+        {
+            tableModel = mapper.Map<TableDTO>(await service.GetById(id));
+            submitButtonTitle = "ویرایش میز";
+            title = "ویرایش میز";
+        }
+        return base.OnInitializedAsync();
+    }
+    private async Task<bool> HandleValidSubmit()
+    {
+        // Process the valid form
+        if (id <= 0)
+        {
+            tableModel.CreatedDateTime = DateTime.Now;
+            result = await service.Insert(mapper.Map<Table>(tableModel));
+            tableModel = new TableDTO();
+
+        }
+        else
+        {
+             result = await service.Update(mapper.Map<Table>(tableModel));
+        }
+        return true;
+    }
+}

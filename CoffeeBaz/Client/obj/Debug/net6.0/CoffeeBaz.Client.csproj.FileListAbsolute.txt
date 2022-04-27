@@ -7,7 +7,6 @@ C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz\Client\bin\Debug\net6.0\
 C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz\Client\bin\Debug\net6.0\wwwroot\_framework\CoffeeBaz.Data.pdb
 C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz\Client\bin\Debug\net6.0\wwwroot\_framework\CoffeeBaz.Shared.dll
 C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz\Client\bin\Debug\net6.0\wwwroot\_framework\CoffeeBaz.Shared.pdb
-C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz\Client\bin\Debug\net6.0\wwwroot\_framework\DataAnnotationsValidator.dll
 C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz\Client\bin\Debug\net6.0\wwwroot\_framework\dotnet.6.0.3.h6mu8y6lxw.js
 C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz\Client\bin\Debug\net6.0\wwwroot\_framework\dotnet.timezones.blat
 C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz\Client\bin\Debug\net6.0\wwwroot\_framework\dotnet.wasm
@@ -389,7 +388,6 @@ C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz\Client\bin\Debug\net6.0\
 C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz\Client\bin\Debug\net6.0\wwwroot\_framework\System.ComponentModel.EventBasedAsync.dll.gz
 C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz\Client\bin\Debug\net6.0\wwwroot\_framework\System.IO.FileSystem.Primitives.dll.gz
 C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz\Client\bin\Debug\net6.0\wwwroot\_framework\System.Xml.ReaderWriter.dll.gz
-C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz\Client\bin\Debug\net6.0\wwwroot\_framework\DataAnnotationsValidator.dll.gz
 C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz\Client\bin\Debug\net6.0\wwwroot\_framework\System.Text.Json.dll.gz
 C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz\Client\bin\Debug\net6.0\wwwroot\_framework\System.Collections.dll.gz
 C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz\Client\bin\Debug\net6.0\wwwroot\_framework\System.Runtime.Serialization.Json.dll.gz
@@ -457,7 +455,6 @@ C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz\Client\bin\Debug\net6.0\
 C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz\Client\bin\Debug\net6.0\CoffeeBaz.Client.dll
 C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz\Client\bin\Debug\net6.0\CoffeeBaz.Client.pdb
 C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz\Client\bin\Debug\net6.0\AutoMapper.dll
-C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz\Client\bin\Debug\net6.0\DataAnnotationsValidator.dll
 C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz\Client\bin\Debug\net6.0\Microsoft.AspNetCore.Authorization.dll
 C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz\Client\bin\Debug\net6.0\Microsoft.AspNetCore.Components.dll
 C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz\Client\bin\Debug\net6.0\Microsoft.AspNetCore.Components.Forms.dll
@@ -686,7 +683,6 @@ C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz\Client\obj\Debug\net6.0\
 C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz\Client\obj\Debug\net6.0\CoffeeBaz.Client.csproj.CoreCompileInputs.cache
 C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz\Client\obj\Debug\net6.0\CoffeeBaz.Client.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz\Client\obj\Debug\net6.0\build-gz\50ZU4AXB.gz
-C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz\Client\obj\Debug\net6.0\build-gz\QbArhkYY.gz
 C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz\Client\obj\Debug\net6.0\build-gz\AqeaKC2+.gz
 C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz\Client\obj\Debug\net6.0\build-gz\+yzB27sL.gz
 C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz\Client\obj\Debug\net6.0\build-gz\AoVTSMeO.gz

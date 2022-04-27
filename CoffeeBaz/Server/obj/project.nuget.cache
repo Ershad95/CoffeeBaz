@@ -1,12 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "wQIRYkLabXPRt2k4jSRg8ot0zIzvmCx7K98+Xpg7loB/42qFxxGPJYpbSNdBVb8tYE7sH09DWMXK3iYZSk6Kbg==",
+  "dgSpecHash": "wRGht2jHz1vQ025aIOrnHYbZG9nzkapVsp1kwjnNFYIOiauUdA0lbwp0mT6qVBVDtJQkRDBgfQq7jfL45aR73Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\Ershad Raoufi\\Desktop\\oout\\CoffeeBaz\\CoffeeBaz\\Server\\CoffeeBaz.Server.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ershad Raoufi\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\Ershad Raoufi\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
-    "C:\\Users\\Ershad Raoufi\\.nuget\\packages\\dataannotationsvalidator\\2.2.0\\dataannotationsvalidator.2.2.0.nupkg.sha512",
     "C:\\Users\\Ershad Raoufi\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Ershad Raoufi\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
     "C:\\Users\\Ershad Raoufi\\.nuget\\packages\\messagepack.annotations\\2.1.152\\messagepack.annotations.2.1.152.nupkg.sha512",
@@ -204,16 +203,5 @@
     "C:\\Users\\Ershad Raoufi\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\Ershad Raoufi\\.nuget\\packages\\zxing.net\\0.16.6\\zxing.net.0.16.6.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'DataAnnotationsValidator 2.2.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
-      "libraryId": "DataAnnotationsValidator",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    }
-  ]
+  "logs": []
 }

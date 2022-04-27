@@ -12,5 +12,7 @@ namespace CoffeeBaz.Service
          Task<bool> Update(Entiry entity, CancellationToken cancellationToken = default);
          Task<bool> Delete(Entiry entity, CancellationToken cancellationToken = default);
          Task<Entiry> GetById(int id, CancellationToken cancellationToken=default);
+
+         Task<IList<Entiry>> GetAllEntites();
     }
 }

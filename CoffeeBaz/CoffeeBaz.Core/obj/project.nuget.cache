@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "wkrsHBUxwx7Ob/J+xqfLjCtwqSY5NCGlWFX+JYYIWAgZZpTe8BJltiMFIBXL81Xuo+RLThYy8uzkr1jcTS97cw==",
+  "dgSpecHash": "vADzy8ewPVJhjonmSwewAvy75D0d/412WsIEFZyAKd4NpQDV0fFEpH4oXHyjXwQDRq2aVU56+03PV4t8VpXS1Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\Ershad Raoufi\\Desktop\\oout\\CoffeeBaz\\CoffeeBaz\\CoffeeBaz.Core\\CoffeeBaz.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ershad Raoufi\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
+    "C:\\Users\\Ershad Raoufi\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\Ershad Raoufi\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Ershad Raoufi\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "C:\\Users\\Ershad Raoufi\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",

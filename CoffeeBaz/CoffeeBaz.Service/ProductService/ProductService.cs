@@ -14,6 +14,11 @@ namespace CoffeeBaz.Service.ProductService
             throw new NotImplementedException();
         }
 
+        public Task<IEnumerable<Product>> GetAllEntites()
+        {
+            throw new NotImplementedException();
+        }
+
         public Task<Product> GetById(int id, CancellationToken cancellationToken = default)
         {
             throw new NotImplementedException();
@@ -25,6 +30,11 @@ namespace CoffeeBaz.Service.ProductService
         }
 
         public Task<bool> Update(Product entity, CancellationToken cancellationToken = default)
+        {
+            throw new NotImplementedException();
+        }
+
+        Task<IList<Product>> IService<Product>.GetAllEntites()
         {
             throw new NotImplementedException();
         }

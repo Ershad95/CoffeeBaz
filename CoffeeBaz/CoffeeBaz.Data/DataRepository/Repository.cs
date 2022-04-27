@@ -51,7 +51,7 @@ namespace CoffeeBaz.Data.DataRepository
 
         public async Task<T> GetById(int id,CancellationToken cancellationToken)
         {
-            return await Entity.FirstOrDefaultAsync(x => x.Id == id);
+            return await Entity.FirstOrDefaultAsync(x => x.Id == id,cancellationToken);
         }
 
         public async Task<bool> Insert(T entity,CancellationToken cancellationToken=default)
@@ -78,17 +78,16 @@ namespace CoffeeBaz.Data.DataRepository
             throw new NotImplementedException();
         }
 
-        public bool Update(T entity)
+        public async Task<bool> Update(T entity, CancellationToken cancellationToken = default)
         {
             try
             {
                 _coffeBazContext.Update(entity);
-                _coffeBazContext.SaveChangesAsync();
+                await _coffeBazContext.SaveChangesAsync(cancellationToken);
                 return true;
             }
             catch (Exception)
             {
-
                 return false;
             }
         }
@@ -103,6 +102,6 @@ namespace CoffeeBaz.Data.DataRepository
             throw new NotImplementedException();
         }
 
-       
+        
     }
 }

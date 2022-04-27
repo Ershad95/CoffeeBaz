@@ -1,0 +1,11 @@
+﻿@page "/table/create"
+
+<h3>Create</h3>
+
+<EditForm Model="@model">
+   <InputText bind-value="model.ChairCount" />
+</EditForm>
+
+@code {
+    var model = new CoffeeBaz.Shared.DTO.TableDto();
+}

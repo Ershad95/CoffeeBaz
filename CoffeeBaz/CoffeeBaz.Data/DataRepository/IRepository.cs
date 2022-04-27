@@ -8,7 +8,7 @@ namespace CoffeeBaz.Data.DataRepository
         IQueryable<Template> Entity { get; }
 
         Task<bool> Insert(Template entity, CancellationToken cancellationToken = default);
-        bool Update(Template entity);
+        Task<bool> Update(Template entity, CancellationToken cancellationToken = default);
         bool Delete(Template entity);
 
 

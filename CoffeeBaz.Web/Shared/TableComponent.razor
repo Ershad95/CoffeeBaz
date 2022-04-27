@@ -1,0 +1,31 @@
+﻿@using CoffeeBaz.Shared.DTO
+
+<div class="col-md-4">
+    <div class="card">
+        <div class="card-header">
+            <label>شماره میز : </label>
+            <span>@dd.Number</span>
+        </div>
+        <div class="card-body">
+            <label>میز فعال : </label>
+            <span>@(dd.Active? "بله":"خیر")</span>
+            <hr />
+            <label>میز رزو شده  : </label>
+            <span>@(dd.Reserved? "بله":"خیر")</span>
+            <hr />
+            <label>میز Vip : </label>
+            <span>@(dd.Vip? "بله":"خیر")</span>
+            <hr />
+            <div>
+                <NavLink href=@($"table/upsert/{dd.Id}")>
+                    <i class="oi oi-pencil"></i>
+                </NavLink>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public TableDTO dd { get; set; }
+}
