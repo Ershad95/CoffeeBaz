@@ -1,3 +1,207 @@
+/* _content/CoffeeBaz.Web/Pages/Index.razor.rz.scp.css */
+*[b-0hrngurmkr] {
+    margin: 0;
+    padding: 0;
+   
+    box-sizing: border-box;
+}
+
+:root[b-0hrngurmkr] {
+    --bgcolor: #f8f4f0;
+}
+
+img[b-0hrngurmkr] {
+    max-width: 100%;
+}
+
+li[b-0hrngurmkr] {
+    list-style: none;
+}
+
+a[b-0hrngurmkr] {
+    text-decoration: none;
+}
+
+body[b-0hrngurmkr] {
+    direction: ltr;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main[b-0hrngurmkr] {
+    max-width: 960px;
+    padding: 15px;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main-100[b-0hrngurmkr] {
+    max-width: 100%;
+    padding: 0;
+}
+
+.col-1[b-0hrngurmkr] {
+    width: 100%;
+}
+
+.col-2[b-0hrngurmkr] {
+    width: 49%;
+    margin: 0 5px;
+}
+
+.col-3[b-0hrngurmkr] {
+    width: 74%;
+    margin: 0 5px;
+}
+
+.col-4[b-0hrngurmkr] {
+    width: 24%;
+    margin: 0 5px;
+}
+
+.w-33[b-0hrngurmkr] {
+    width: 32%;
+    margin: 0 5px;
+}
+
+.top-wrap h4[b-0hrngurmkr] {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.top-wrap a[b-0hrngurmkr] {
+    color: #777;
+    font-size: 12px;
+}
+
+.top-wrap img[b-0hrngurmkr] {
+    display: table;
+    margin: 0 auto;
+}
+
+.no-col-baners .pic[b-0hrngurmkr] {
+    width: 50%;
+}
+
+    .no-col-baners .pic figure[b-0hrngurmkr] {
+        position: relative;
+    }
+
+        .no-col-baners .pic figure figcaption[b-0hrngurmkr] {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            text-align: center;
+            padding: 50px;
+        }
+
+            .no-col-baners .pic figure figcaption h3[b-0hrngurmkr] {
+                margin: 30px 0;
+            }
+
+            .no-col-baners .pic figure figcaption span[b-0hrngurmkr] {
+                display: inline-block;
+                margin: 30px 0;
+                width: 50px;
+                height: 50px;
+                background: #fff;
+                line-height: 55px;
+                border-radius: 50%;
+            }
+
+                .no-col-baners .pic figure figcaption span a[b-0hrngurmkr] {
+                    color: rgb(202, 194, 123);
+                }
+
+.no-col-baners .pic-black figure[b-0hrngurmkr]:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 56%);
+}
+
+.no-col-baners .pic figure figcaption.dark[b-0hrngurmkr] {
+    color: #eee;
+    padding: 150px;
+}
+
+    .no-col-baners .pic figure figcaption.dark span[b-0hrngurmkr] {
+        display: inline-block;
+        margin: 60px 0;
+        line-height: 20px;
+        width: auto;
+        height: auto;
+        background-color: #cac27b;
+        padding: 8px 25px;
+        border-radius: 5px;
+        font-size: 13px;
+    }
+
+    .no-col-baners .pic figure figcaption.dark p[b-0hrngurmkr] {
+        font-size: 13px;
+    }
+
+    .no-col-baners .pic figure figcaption.dark span a[b-0hrngurmkr] {
+        color: #fff;
+    }
+
+.no-col-baners .pic figure img[b-0hrngurmkr] {
+    object-fit: cover;
+    display: table;
+}
+
+.feature .main .f-item img[b-0hrngurmkr] {
+    border-radius: 20px;
+    display: table;
+    margin: 0 auto;
+}
+
+.feature .main .f-item ul[b-0hrngurmkr] {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+
+.feature .main .f-item h4[b-0hrngurmkr] {
+    text-align: center;
+    color: #444;
+    margin: 15px 0 5px 0;
+}
+
+.feature .main .f-item ul li[b-0hrngurmkr] {
+    font-size: 13px;
+    color: #888;
+}
+
+.footer-pic[b-0hrngurmkr] {
+    text-align: center;
+}
+
+    .footer-pic img[b-0hrngurmkr] {
+        display: table;
+        margin: 0 auto;
+        margin-bottom: -100px;
+    }
+
+.footer-menu[b-0hrngurmkr] {
+    border-top: 1px solid #ddd;
+    padding-top: 50px;
+}
+
+    .footer-menu .main[b-0hrngurmkr] {
+        justify-content: space-around;
+    }
+
+        .footer-menu .main a[b-0hrngurmkr] {
+            color: #444;
+            padding: 10px 0;
+            font-size: 13px;
+        }
 /* _content/CoffeeBaz.Web/Shared/MainLayout.razor.rz.scp.css */
 .page[b-pxecowrhvd] {
     position: relative;

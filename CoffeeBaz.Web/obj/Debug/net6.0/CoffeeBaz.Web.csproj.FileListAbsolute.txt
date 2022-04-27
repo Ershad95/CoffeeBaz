@@ -279,3 +279,4 @@ C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz.Web\bin\Debug\net6.0\run
 C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz.Web\bin\Debug\net6.0\runtimes\win-arm64\lib\net6.0\dotnet-aspnet-codegenerator-design.exe
 C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz.Web\obj\Debug\net6.0\CoffeeBaz.Web.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz.Web\bin\Debug\net6.0\Dapper.dll
+C:\Users\Ershad Raoufi\Desktop\oout\CoffeeBaz\CoffeeBaz.Web\obj\Debug\net6.0\scopedcss\Pages\Index.razor.rz.scp.css

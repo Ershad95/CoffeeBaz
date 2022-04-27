@@ -5,7 +5,14 @@
 @using CoffeeBaz.Shared.DTO
 @inject ITableService service
 @inject IMapper mapper
-<h3>لیست میز ها</h3>
+<div class="row">
+    <div class="col-md-10">
+        <h3>لیست میز ها</h3>
+    </div>
+    <div class="col-md-2">
+        <NavLink href="/table/upsert" class="btn btn-primary">اضافه کردن میز </NavLink>
+    </div>
+</div>
 <div class="row">
     @{
         foreach (var table in tables)
