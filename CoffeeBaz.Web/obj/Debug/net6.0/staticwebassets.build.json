@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "5qs0CsTDRW36xZ6g07ufnasN+ek+0Rfub92Lk6aK1B0=",
+  "Hash": "Il95ypSQvFp7WG1uRKttN3s13J3z44++HGqMKy2c1WQ=",
   "Source": "CoffeeBaz.Web",
   "BasePath": "_content/CoffeeBaz.Web",
   "Mode": "Default",
@@ -406,6 +406,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Identity": "C:\\Users\\Ershad Raoufi\\Desktop\\oout\\CoffeeBaz\\CoffeeBaz.Web\\wwwroot\\img\\coffe.jpg",
+      "SourceId": "CoffeeBaz.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ershad Raoufi\\Desktop\\oout\\CoffeeBaz\\CoffeeBaz.Web\\wwwroot\\",
+      "BasePath": "_content/CoffeeBaz.Web",
+      "RelativePath": "img/coffe.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\coffe.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Ershad Raoufi\\Desktop\\oout\\CoffeeBaz\\CoffeeBaz.Web\\wwwroot\\img\\coffe-2.jpg",
+      "SourceId": "CoffeeBaz.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ershad Raoufi\\Desktop\\oout\\CoffeeBaz\\CoffeeBaz.Web\\wwwroot\\",
+      "BasePath": "_content/CoffeeBaz.Web",
+      "RelativePath": "img/coffe-2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\coffe-2.jpg"
     },
     {
       "Identity": "C:\\Users\\Ershad Raoufi\\Desktop\\oout\\CoffeeBaz\\CoffeeBaz.Web\\wwwroot\\img\\home-restaurant-bg-02.png",
