@@ -13,14 +13,12 @@ namespace CoffeeBaz.Core.Extentions
     {
         public static void AddAllLocalServices(this IServiceCollection services)
         {
-            services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
-            services.AddScoped<ITableService, TableService>();
-            services.AddScoped<ICategoryService, CategoryService>();
-            services.AddScoped<IProductService, ProductService>();
-            services.AddScoped<IQrCodeService, QrCodeService>();
-            services.AddScoped<IOrderService, OrderService>();
+            services.AddTransient(typeof(IRepository<>), typeof(Repository<>));
+            services.AddTransient<ITableService, TableService>();
+            services.AddTransient<ICategoryService, CategoryService>();
+            services.AddTransient<IProductService, ProductService>();
+            services.AddSingleton<IQrCodeService, QrCodeService>();
+            services.AddTransient<IOrderService, OrderService>();
         }
-
-       
     }
 }

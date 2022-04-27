@@ -23,6 +23,7 @@ namespace CoffeeBaz.Data.Context
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
+            optionsBuilder.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
             if (!optionsBuilder.IsConfigured)
             {
                 optionsBuilder.UseSqlServer(configuration.GetConnectionString("ConnectionString"));

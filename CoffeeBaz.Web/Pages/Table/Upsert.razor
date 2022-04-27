@@ -9,10 +9,17 @@
 @using CoffeeBaz.Shared.DTO
 <h1>@title</h1>
 @{
-    if (result){
-        <Alert title="میز مورد نظر با موفقعیت اضافه شد" 
-            typeAlert =@Alert.TypeAlert.Success></Alert>
-    }
+    if (result.HasValue)
+        if (result.Value)
+        {
+            <Alert title="@AlertMessage"
+                typeAlert=@Alert.TypeAlert.Success></Alert>
+        }
+        else
+        {
+            <Alert title="مشکلی در ثبت اطلاعات وجود دارد"
+                typeAlert=@Alert.TypeAlert.Danger></Alert>
+        }
 }
 <EditForm Model="@tableModel" OnValidSubmit="@HandleValidSubmit">
     <DataAnnotationsValidator />
@@ -58,7 +65,8 @@
     private CoffeeBaz.Shared.DTO.TableDTO tableModel = new();
     private string submitButtonTitle = "ثبت میز جدید";
     private string title = "ثبت میز جدید";
-    bool result;
+    private string AlertMessage = "میز مورد نظر با موفقعیت اضافه شد";
+    bool? result = null;
     protected async override Task<Task> OnInitializedAsync()
     {
         if (id > 0)
@@ -81,7 +89,8 @@
         }
         else
         {
-             result = await service.Update(mapper.Map<Table>(tableModel));
+            AlertMessage = $"ویرایش میز {tableModel.Number} با موفقعیت انجام شد";
+            result = await service.Update(mapper.Map<Table>(tableModel));
         }
         return true;
     }
