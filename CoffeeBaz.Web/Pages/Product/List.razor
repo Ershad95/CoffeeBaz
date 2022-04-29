@@ -1,0 +1,46 @@
+﻿@page "/product/list"
+@using CoffeeBaz.Shared.DTO
+@using AutoMapper
+@using Service.ProductService
+@using CoffeeBaz.Data.Domain
+@inject IProductService service
+@inject IMapper mapper
+<div class="row">
+    <div class="col-md-9">
+        <h3>لیست نوشیدنی ها/خوردنی ها</h3>
+    </div>
+    <div class="col-md-3">
+        <NavLink href="/product/upsert" class="btn btn-primary">اضافه کردن نوشیدنی/خوردنی </NavLink>
+    </div>
+</div>
+<div class="row">
+    @{
+        if (tables.Any())
+        {
+            foreach (var table in tables)
+            {
+                <ProductComponent dd=table></ProductComponent>
+            }
+        }
+        else
+        {
+            <Alert title="هیچ نوشیدنی/خوردنی از کافه باز ثبت نشده" 
+                   typeAlert=Alert.TypeAlert.Info></Alert>
+        }
+       
+    }
+</div>
+@code {
+    private IList<ProductDTO> tables;
+    protected override Task OnInitializedAsync()
+    {
+        tables = new List<ProductDTO>();
+        var data =  service.GetAllEntites();
+        tables = mapper.Map<IList<Product>,IList<ProductDTO>>(data.Result);
+        return base.OnInitializedAsync();
+    }
+    protected override Task OnAfterRenderAsync(bool firstRender)
+    {
+        return base.OnAfterRenderAsync(firstRender);
+    }
+}

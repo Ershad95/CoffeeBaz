@@ -1,0 +1,84 @@
+﻿@page "/product/upsert/{id:int}"
+@page "/product/upsert"
+@using AutoMapper
+@using CoffeeBaz.Service.ProductService
+@using CoffeeBaz.Data.Domain
+@inject IProductService service
+@inject IMapper mapper
+@using CoffeeBaz.Shared.DTO
+<h1>@title</h1>
+@{
+    if (result.HasValue)
+        if (result.Value)
+        {
+            <Alert title="@AlertMessage"
+                typeAlert=@Alert.TypeAlert.Success></Alert>
+        }
+        else
+        {
+            <Alert title="مشکلی در ثبت اطلاعات وجود دارد"
+                typeAlert=@Alert.TypeAlert.Danger></Alert>
+        }
+}
+<EditForm Model="@model" OnValidSubmit="@HandleValidSubmit">
+     <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div class="form-group">
+        <label>نام نوشیدنی/خوردنی</label>
+        <InputText class="form-control" @bind-Value="model.Name" placeholder="نام محصول را مشخص کنید" />
+    </div>
+    <div class="form-group">
+        <label>توضیحات نوشیدنی/خوردنی</label>
+        <InputTextArea class="form-control" @bind-Value="model.Description" placeholder="نام محصول را مشخص کنید" />
+    </div>
+    <div class="form-group">
+         <InputCheckbox @bind-Value="model.Active"/>
+        <label>نوشیدنی/خوردنی موجود است؟</label>
+    </div>
+    <div class="form-group">
+         <InputCheckbox @bind-Value="model.Vip" />
+        <label>نوشیدنی/خوردنی VIP است؟</label>
+    </div>
+    <button type="submit" class="btn btn-success">@submitButtonTitle</button>
+</EditForm>
+
+
+@code{
+    [Parameter]
+    public int id{ get; set; }
+    private string submitButtonTitle = "ثبت نوشیدنی/خوردنی جدید";
+    private string title = "ثبت نوشیدنی/خوردنی جدید";
+    private string AlertMessage = "نوشیدنی/خوردنی مورد نظر با موفقعیت اضافه شد";
+    private ProductDTO model;
+    bool? result = null;
+    protected async override Task<Task> OnInitializedAsync()
+    {
+        model = new ProductDTO();
+        if (id > 0)
+        {
+            model = mapper.Map<ProductDTO>(await service.GetById(id));
+            submitButtonTitle = $"ویرایش {model.Name}";
+            title = $"ویرایش {model.Name}";
+        }
+       
+        return base.OnInitializedAsync();
+    }
+    private async Task<bool> HandleValidSubmit()
+    {
+        // Process the valid form
+        if (id <= 0)
+        {
+            model.CreatedDateTime = DateTime.Now;
+            result = await service.Insert(mapper.Map<Product>(model));
+            model = new ProductDTO();
+
+        }
+        else
+        {
+            AlertMessage = $"ویرایش نوشیدنی/خوردنی {model.Name} با موفقعیت انجام شد";
+            result = await service.Update(mapper.Map<Product>(model));
+        }
+        return true;
+    }
+}

@@ -15,18 +15,32 @@
 </div>
 <div class="row">
     @{
-        foreach (var table in tables)
+        if (tables.Any())
         {
-           <TableComponent dd=table></TableComponent>
+            foreach (var table in tables)
+            {
+                <TableComponent dd=table></TableComponent>
+            }
         }
+        else
+        {
+            <Alert title="هیچ میزی از کافه باز ثبت نشده" 
+                   typeAlert=Alert.TypeAlert.Info></Alert>
+        }
+       
     }
 </div>
 @code {
     private IList<TableDTO> tables;
     protected override Task OnInitializedAsync()
     {
-        var data = service.GetAllEntites().Result;
-        tables = mapper.Map<IList<Table>,IList<TableDTO>>(data);
+        tables = new List<TableDTO>();
+        var data =  service.GetAllEntites();
+        tables = mapper.Map<IList<Table>,IList<TableDTO>>(data.Result);
         return base.OnInitializedAsync();
+    }
+    protected override Task OnAfterRenderAsync(bool firstRender)
+    {
+        return base.OnAfterRenderAsync(firstRender);
     }
 }

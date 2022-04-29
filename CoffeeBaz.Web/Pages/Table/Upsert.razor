@@ -21,35 +21,35 @@
                 typeAlert=@Alert.TypeAlert.Danger></Alert>
         }
 }
-<EditForm Model="@tableModel" OnValidSubmit="@HandleValidSubmit">
+<EditForm Model="@model" OnValidSubmit="@HandleValidSubmit">
     <DataAnnotationsValidator />
     <ValidationSummary />
 
     <div class="form-group">
         <label for="exampleInputEmail1">تعداد صندلی ها:</label>
-        <InputNumber class="form-control" @bind-Value="tableModel.ChairCount" placeholder="تعداد صندلی های میز را مشخص کنید" />
+        <InputNumber class="form-control" @bind-Value="model.ChairCount" placeholder="تعداد صندلی های میز را مشخص کنید" />
     </div>
     <div class="form-group">
         <label for="exampleInputEmail1">شماره میز :‌</label>
-        <InputText class="form-control" @bind-Value="tableModel.Number" placeholder="شماره میز را مشخص کنید" />
+        <InputText class="form-control" @bind-Value="model.Number" placeholder="شماره میز را مشخص کنید" />
     </div>
     <div class="form-group">
 
-        <InputCheckbox @bind-Value="tableModel.Reserved" />
+        <InputCheckbox @bind-Value="model.Reserved" />
         <label for="exampleInputEmail1">این میز قبلا رزرو شده است؟</label>
     </div>
     <div class="form-group">
 
-        <InputCheckbox @bind-Value="tableModel.Active" />
+        <InputCheckbox @bind-Value="model.Active" />
         <label for="exampleInputEmail1">میز فعال می باشد؟</label>
     </div>
     <div class="form-group">
 
-        <InputCheckbox @bind-Value="tableModel.Vip" />
+        <InputCheckbox @bind-Value="model.Vip" />
         <label for="exampleInputEmail1">میز VIP هست ؟ </label>
     </div>
     <div class="form-group">
-        <InputCheckbox @bind-Value="tableModel.CleanRequire" />
+        <InputCheckbox @bind-Value="model.CleanRequire" />
         <label for="exampleInputEmail1">میز نیاز به تمیز شدن دارد؟</label>
 
     </div>
@@ -62,7 +62,7 @@
 
     [Parameter]
     public int id { get; set; }
-    private CoffeeBaz.Shared.DTO.TableDTO tableModel = new();
+    private CoffeeBaz.Shared.DTO.TableDTO model = new();
     private string submitButtonTitle = "ثبت میز جدید";
     private string title = "ثبت میز جدید";
     private string AlertMessage = "میز مورد نظر با موفقعیت اضافه شد";
@@ -71,7 +71,7 @@
     {
         if (id > 0)
         {
-            tableModel = mapper.Map<TableDTO>(await service.GetById(id));
+            model = mapper.Map<TableDTO>(await service.GetById(id));
             submitButtonTitle = "ویرایش میز";
             title = "ویرایش میز";
         }
@@ -82,15 +82,15 @@
         // Process the valid form
         if (id <= 0)
         {
-            tableModel.CreatedDateTime = DateTime.Now;
-            result = await service.Insert(mapper.Map<Table>(tableModel));
-            tableModel = new TableDTO();
+            model.CreatedDateTime = DateTime.Now;
+            result = await service.Insert(mapper.Map<Table>(model));
+            model = new TableDTO();
 
         }
         else
         {
-            AlertMessage = $"ویرایش میز {tableModel.Number} با موفقعیت انجام شد";
-            result = await service.Update(mapper.Map<Table>(tableModel));
+            AlertMessage = $"ویرایش میز {model.Number} با موفقعیت انجام شد";
+            result = await service.Update(mapper.Map<Table>(model));
         }
         return true;
     }

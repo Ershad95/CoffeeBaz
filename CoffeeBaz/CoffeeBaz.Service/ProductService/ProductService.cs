@@ -1,4 +1,5 @@
-﻿using CoffeeBaz.Data.Domain;
+﻿using CoffeeBaz.Data.DataRepository;
+using CoffeeBaz.Data.Domain;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,34 +10,35 @@ namespace CoffeeBaz.Service.ProductService
 {
     public class ProductService : IProductService
     {
+        private readonly IRepository<Product> _repository;
+        public ProductService(IRepository<Product> repository)
+        {
+            _repository = repository;
+        }
         public Task<bool> Delete(Product entity, CancellationToken cancellationToken = default)
         {
             throw new NotImplementedException();
         }
 
-        public Task<IEnumerable<Product>> GetAllEntites()
+
+        public async Task<Product> GetById(int id, CancellationToken cancellationToken = default)
         {
-            throw new NotImplementedException();
+            return await _repository.GetById(id, cancellationToken);
         }
 
-        public Task<Product> GetById(int id, CancellationToken cancellationToken = default)
+        public async Task<bool> Insert(Product entity, CancellationToken cancellationToken = default)
         {
-            throw new NotImplementedException();
+            return await _repository.Insert(entity, cancellationToken);
         }
 
-        public Task<bool> Insert(Product entity, CancellationToken cancellationToken = default)
+        public async Task<bool> Update(Product entity, CancellationToken cancellationToken = default)
         {
-            throw new NotImplementedException();
+            return await _repository.Update(entity, cancellationToken);
         }
 
-        public Task<bool> Update(Product entity, CancellationToken cancellationToken = default)
+        public async Task<IList<Product>> GetAllEntites()
         {
-            throw new NotImplementedException();
-        }
-
-        Task<IList<Product>> IService<Product>.GetAllEntites()
-        {
-            throw new NotImplementedException();
+            return _repository.Entity.ToList();
         }
     }
 }

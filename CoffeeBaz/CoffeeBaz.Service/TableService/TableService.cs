@@ -24,7 +24,7 @@ namespace CoffeeBaz.Service.TableService
         }
         public async Task<bool> Delete(Table entity, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+              return await _repository.Delete(entity,cancellationToken);
         }
 
         public async  Task<IList<Table>> GetAllEntites()
@@ -45,7 +45,7 @@ namespace CoffeeBaz.Service.TableService
 
         public async Task<bool> Update(Table entity, CancellationToken cancellationToken)
         {
-            return  await _repository.Update(entity);
+            return  await _repository.Update(entity,cancellationToken);
         }
     }
 }

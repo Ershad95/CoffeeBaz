@@ -1,0 +1,13 @@
+﻿<h3>@LoadingMessage</h3>
+
+<div class="fa fa-spin fa-spinner fa-5x"></div>
+
+@code {
+    [Parameter]
+    public string LoadingMessage{ get; set; }
+    protected override void OnInitialized()
+    {
+        LoadingMessage = "در حال بارگذاری اطلاعات...";
+        base.OnInitialized();
+    }
+}

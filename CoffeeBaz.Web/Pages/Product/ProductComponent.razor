@@ -1,0 +1,44 @@
+﻿
+@using AutoMapper
+@using CoffeeBaz.Data.Domain
+@using CoffeeBaz.Shared.DTO
+@using CoffeeBaz.Service.ProductService;
+@inject IProductService service; 
+@inject IMapper mapper;
+<div class=@parentClass>
+    <div class="card">
+        <div class="card-header">
+            <label>نام : </label>
+            <span>@dd.Name</span>
+        </div>
+        <div class="card-body">
+            <label>نوشیدنی/خوردنی فعال : </label>
+            <span>@(dd.Active? "بله":"خیر")</span>
+            <hr />
+            <label>نوشیدنی/خوردنی Vip : </label>
+            <span>@(dd.Vip? "بله":"خیر")</span>
+            <hr />
+            <div> 
+                <NavLink href=@($"product/upsert/{dd.Id}")>
+                    <i class="oi oi-pencil"></i>
+                </NavLink>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    public string parentClass{ get; set; }
+    [Parameter]
+    public ProductDTO dd { get; set; }
+    private void Delete()
+    {
+        service.Delete(mapper.Map<Product>(dd));
+        parentClass += " none_display";
+    }
+    protected override void OnInitialized()
+    {
+        parentClass = "col-md-4";
+        base.OnInitialized();
+    }
+}

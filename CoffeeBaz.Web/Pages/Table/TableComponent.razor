@@ -1,6 +1,10 @@
-﻿@using CoffeeBaz.Shared.DTO
-
-<div class="col-md-4">
+﻿@using AutoMapper
+@using CoffeeBaz.Data.Domain
+@using CoffeeBaz.Shared.DTO
+@using CoffeeBaz.Service.TableService;
+@inject ITableService service; 
+@inject IMapper mapper;
+<div class=@parentClass>
     <div class="card">
         <div class="card-header">
             <label>شماره میز : </label>
@@ -16,16 +20,28 @@
             <label>میز Vip : </label>
             <span>@(dd.Vip? "بله":"خیر")</span>
             <hr />
-            <div>
+            <div> 
                 <NavLink href=@($"table/upsert/{dd.Id}")>
                     <i class="oi oi-pencil"></i>
                 </NavLink>
+                <i class="oi oi-delete" @onclick="Delete"></i>
             </div>
         </div>
     </div>
 </div>
 
 @code {
+    public string parentClass{ get; set; }
     [Parameter]
     public TableDTO dd { get; set; }
+    private void Delete()
+    {
+        service.Delete(mapper.Map<Table>(dd));
+        parentClass += " none_display";
+    }
+    protected override void OnInitialized()
+    {
+        parentClass = "col-md-4";
+        base.OnInitialized();
+    }
 }

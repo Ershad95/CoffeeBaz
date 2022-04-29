@@ -5,7 +5,15 @@
     src: url('https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.eot?#iefix') format('embedded-opentype'), url('https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.woff2') format('woff2'), url('https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.woff') format('woff'), url('https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.ttf') format('truetype');
     font-weight: normal;
 }
-
+.disable{
+    pointer-events:none;
+    opacity:0.5;
+}
+.none_display {
+    pointer-events: none;
+    opacity: 0.5;
+    display:none;
+}
 body {
     font-family: Vazir;
     direction: rtl;

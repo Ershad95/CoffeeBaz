@@ -9,7 +9,7 @@ namespace CoffeeBaz.Data.DataRepository
 
         Task<bool> Insert(Template entity, CancellationToken cancellationToken = default);
         Task<bool> Update(Template entity, CancellationToken cancellationToken = default);
-        bool Delete(Template entity);
+        Task<bool> Delete(Template entity, CancellationToken cancellation = default);
 
 
         bool Update(int id);

@@ -20,12 +20,12 @@ namespace CoffeeBaz.Data.DataRepository
         }
         public IQueryable<T> Entity => _entities.AsQueryable();
 
-        public bool Delete(T entity)
+        public async Task<bool> Delete(T entity,CancellationToken cancellationToken)
         {
             try
             {
                 _coffeBazContext.Remove(entity);
-                _coffeBazContext.SaveChangesAsync();
+                await _coffeBazContext.SaveChangesAsync(cancellationToken);
                 return true;
             }
             catch (Exception)
