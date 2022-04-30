@@ -11,6 +11,6 @@ public class Product : BaseEntity
     public bool Active { get; set; }
     public int CatergoryId { get; set; }
     //----------Navigation Property-----------
-    public virtual Category Category { get; set; }
+    public virtual Category Catergory { get; set; }
 }
 

@@ -37,6 +37,7 @@
         tables = new List<ProductDTO>();
         var data =  service.GetAllEntites();
         tables = mapper.Map<IList<Product>,IList<ProductDTO>>(data.Result);
+        
         return base.OnInitializedAsync();
     }
     protected override Task OnAfterRenderAsync(bool firstRender)

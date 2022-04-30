@@ -21,10 +21,12 @@ public class ProductDTO:BaseDTO
     [Display(Name = "مبلغ")]
     [Required(ErrorMessage = "لطفا {0} را وارد نمایید")]
     public decimal Price { get; set; }
-    public int CatergoryId { get; set; }
+  
     [Display(Name = "آیا فعال میباشد؟")]
     public bool Active { get; set; }
 
     public IList<CategoryDTO> categoryDTOs { get; set; }
+    public string CategoryName { get; set; }
+    public int CatergoryId { get; set; }
 }
 

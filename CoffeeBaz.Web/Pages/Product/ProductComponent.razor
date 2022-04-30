@@ -1,9 +1,8 @@
-﻿
-@using AutoMapper
+﻿@using AutoMapper
 @using CoffeeBaz.Data.Domain
 @using CoffeeBaz.Shared.DTO
 @using CoffeeBaz.Service.ProductService;
-@inject IProductService service; 
+@inject IProductService service;
 @inject IMapper mapper;
 <div class=@parentClass>
     <div class="card">
@@ -20,8 +19,19 @@
             <hr />
             <label>نوشیدنی/خوردنی Vip : </label>
             <span>@(dd.Vip? "بله":"خیر")</span>
+            @{
+                if (dd.CatergoryId > 0)
+                {
+                    <hr />
+                    <label>دسته بندی </label>
+                        <NavLink href=@($"category/upsert/{dd.CatergoryId}")>
+                            
+                            <i class="oi oi-pencil"></i>
+                        </NavLink>
+                }
+            }
             <hr />
-            <div> 
+            <div>
                 <NavLink href=@($"product/upsert/{dd.Id}")>
                     <i class="oi oi-pencil"></i>
                 </NavLink>
@@ -31,7 +41,7 @@
 </div>
 
 @code {
-    public string parentClass{ get; set; }
+    public string parentClass { get; set; }
     [Parameter]
     public ProductDTO dd { get; set; }
     private void Delete()

@@ -1,12 +1,6 @@
 ﻿using CoffeeBaz.Data.Context;
 using CoffeeBaz.Data.Domain;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace CoffeeBaz.Data.DataRepository
 {
     public class Repository<T> : IRepository<T> where T : BaseEntity

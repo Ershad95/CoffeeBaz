@@ -13,7 +13,7 @@ namespace CoffeeBaz.Core.Extentions
     {
         public static void AddAllLocalServices(this IServiceCollection services)
         {
-            services.AddTransient(typeof(IRepository<>), typeof(Repository<>));
+            services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
             services.AddTransient<ITableService, TableService>();
             services.AddTransient<ICategoryService, CategoryService>();
             services.AddTransient<IProductService, ProductService>();

@@ -13,8 +13,8 @@ public class AutoMapperProfile : Profile
         CreateMap<CategoryDTO, Category>();
         CreateMap<OrderDTO, Order>();
         CreateMap<TableDTO, Table>();
-
-        CreateMap<Product, ProductDTO>();
+        
+        CreateMap<Product, ProductDTO>().ForMember(o => o.CategoryName, b => b.MapFrom(z => z.Catergory.Name));
         CreateMap<Category, CategoryDTO>();
         CreateMap<Order, OrderDTO>();
         CreateMap<Table, TableDTO>();
