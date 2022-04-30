@@ -86,7 +86,7 @@ namespace CoffeeBaz.Data.DataRepository
                 await _coffeBazContext.SaveChangesAsync(cancellationToken);
                 return true;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 return false;
             }

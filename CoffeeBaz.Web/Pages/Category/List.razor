@@ -7,10 +7,10 @@
 @inject IMapper mapper
 <div class="row">
     <div class="col-md-9">
-        <h3>لیست نوشیدنی ها/خوردنی ها</h3>
+        <h3>لیست دسته بندی ها</h3>
     </div>
     <div class="col-md-3">
-        <NavLink href="/product/upsert" class="btn btn-primary">اضافه کردن نوشیدنی/خوردنی </NavLink>
+        <NavLink href="/category/upsert" class="btn btn-primary">اضافه کردن دسته بندی </NavLink>
     </div>
 </div>
 <div class="row">
@@ -24,7 +24,7 @@
         }
         else
         {
-            <Alert title="هیچ نوشیدنی/خوردنی از کافه باز ثبت نشده" 
+            <Alert title="هیچ دسته بندی از کافه باز ثبت نشده" 
                    typeAlert=Alert.TypeAlert.Info></Alert>
         }
        

@@ -2,8 +2,10 @@
 @page "/product/upsert"
 @using AutoMapper
 @using CoffeeBaz.Service.ProductService
+@using CoffeeBaz.Service.CategoryService
 @using CoffeeBaz.Data.Domain
 @inject IProductService service
+@inject ICategoryService category_service
 @inject IMapper mapper
 @using CoffeeBaz.Shared.DTO
 <h1>@title</h1>
@@ -12,16 +14,16 @@
         if (result.Value)
         {
             <Alert title="@AlertMessage"
-                typeAlert=@Alert.TypeAlert.Success></Alert>
+       typeAlert=@Alert.TypeAlert.Success></Alert>
         }
         else
         {
             <Alert title="مشکلی در ثبت اطلاعات وجود دارد"
-                typeAlert=@Alert.TypeAlert.Danger></Alert>
+       typeAlert=@Alert.TypeAlert.Danger></Alert>
         }
 }
 <EditForm Model="@model" OnValidSubmit="@HandleValidSubmit">
-     <DataAnnotationsValidator />
+    <DataAnnotationsValidator />
     <ValidationSummary />
 
     <div class="form-group">
@@ -30,27 +32,39 @@
     </div>
     <div class="form-group">
         <label>قیمت نوشیدنی/خوردنی</label>
-        <InputNumber class="form-control" @bind-Value="model.Description" placeholder="قیمت محصول را مشخص کنید" />
+        <InputNumber class="form-control" @bind-Value="model.Price" placeholder="قیمت محصول را مشخص کنید" />
     </div>
     <div class="form-group">
         <label>توضیحات نوشیدنی/خوردنی</label>
         <InputTextArea class="form-control" @bind-Value="model.Description" placeholder="توضیحات محصول را مشخص کنید" />
     </div>
     <div class="form-group">
-         <InputCheckbox @bind-Value="model.Active"/>
+        <label>دسته بندی</label>
+        <InputSelect class="form-control" @bind-Value="model.CatergoryId">
+            @{
+                foreach (var item in model.categoryDTOs)
+                {
+                    <option value="@item.Id">@item.Name</option>
+                }
+            }
+        </InputSelect>
+
+    </div>
+    <div class="form-group">
+        <InputCheckbox @bind-Value="model.Active" />
         <label>نوشیدنی/خوردنی موجود است؟</label>
     </div>
     <div class="form-group">
-         <InputCheckbox @bind-Value="model.Vip" />
+        <InputCheckbox @bind-Value="model.Vip" />
         <label>نوشیدنی/خوردنی VIP است؟</label>
     </div>
     <button type="submit" class="btn btn-success">@submitButtonTitle</button>
 </EditForm>
 
 
-@code{
+@code {
     [Parameter]
-    public int id{ get; set; }
+    public int id { get; set; }
     private string submitButtonTitle = "ثبت نوشیدنی/خوردنی جدید";
     private string title = "ثبت نوشیدنی/خوردنی جدید";
     private string AlertMessage = "نوشیدنی/خوردنی مورد نظر با موفقعیت اضافه شد";
@@ -59,13 +73,19 @@
     protected async override Task<Task> OnInitializedAsync()
     {
         model = new ProductDTO();
+        var categoryList = mapper.Map<IList<Category>, IList<CategoryDTO>>(await category_service.GetAllEntites());
+        
         if (id > 0)
         {
             model = mapper.Map<ProductDTO>(await service.GetById(id));
             submitButtonTitle = $"ویرایش {model.Name}";
             title = $"ویرایش {model.Name}";
         }
-       
+        model.categoryDTOs.Add(new CategoryDTO() { Id = 0, Name = "-----------" });
+        foreach (var item in categoryList)
+        {
+            model.categoryDTOs.Add(item);
+        }
         return base.OnInitializedAsync();
     }
     private async Task<bool> HandleValidSubmit()

@@ -4,6 +4,10 @@ namespace CoffeeBaz.Shared.DTO;
 
 public class ProductDTO:BaseDTO
 {
+    public ProductDTO()
+    {
+        categoryDTOs = new List<CategoryDTO>();
+    }
     [Display(Name = "نام")]
     [Required(ErrorMessage = "لطفا {0} را وارد نمایید")]
     public string Name { get; set; }
@@ -20,5 +24,7 @@ public class ProductDTO:BaseDTO
     public int CatergoryId { get; set; }
     [Display(Name = "آیا فعال میباشد؟")]
     public bool Active { get; set; }
+
+    public IList<CategoryDTO> categoryDTOs { get; set; }
 }
 
