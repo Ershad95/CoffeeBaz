@@ -2,8 +2,8 @@
 @using AutoMapper
 @using CoffeeBaz.Data.Domain
 @using CoffeeBaz.Shared.DTO
-@using CoffeeBaz.Service.ProductService;
-@inject IProductService service; 
+@using CoffeeBaz.Service.CategoryService;
+@inject ICategoryService service; 
 @inject IMapper mapper;
 <div class=@parentClass>
     <div class="card">
@@ -12,16 +12,14 @@
             <span>@dd.Name</span>
         </div>
         <div class="card-body">
-            <label> قیمت : </label>
-            <span>@dd.Price</span>
-            <label>نوشیدنی/خوردنی فعال : </label>
+            <label>دسته بندی فعال : </label>
             <span>@(dd.Active? "بله":"خیر")</span>
             <hr />
-            <label>نوشیدنی/خوردنی Vip : </label>
+            <label>دسته بندی Vip : </label>
             <span>@(dd.Vip? "بله":"خیر")</span>
             <hr />
             <div> 
-                <NavLink href=@($"product/upsert/{dd.Id}")>
+                <NavLink href=@($"category/upsert/{dd.Id}")>
                     <i class="oi oi-pencil"></i>
                 </NavLink>
             </div>
@@ -32,10 +30,10 @@
 @code {
     public string parentClass{ get; set; }
     [Parameter]
-    public ProductDTO dd { get; set; }
+    public CategoryDTO dd { get; set; }
     private void Delete()
     {
-        service.Delete(mapper.Map<Product>(dd));
+        service.Delete(mapper.Map<Category>(dd));
         parentClass += " none_display";
     }
     protected override void OnInitialized()

@@ -1,4 +1,5 @@
-﻿using CoffeeBaz.Data.Domain;
+﻿using CoffeeBaz.Data.DataRepository;
+using CoffeeBaz.Data.Domain;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,34 +10,37 @@ namespace CoffeeBaz.Service.CategoryService
 {
     public class CategoryService : ICategoryService
     {
+        private readonly IRepository<Category> _repository;
+        public CategoryService(IRepository<Category> repository)
+        {
+            _repository = repository;
+        }
         public Task<bool> Delete(Category entity, CancellationToken cancellationToken = default)
         {
             throw new NotImplementedException();
         }
 
-        public Task<IEnumerable<Category>> GetAllEntites()
+
+        public async Task<Category> GetById(int id, CancellationToken cancellationToken = default)
         {
-            throw new NotImplementedException();
+            return await _repository.GetById(id, cancellationToken);
         }
 
-        public Task<Category> GetById(int id, CancellationToken cancellationToken = default)
+        public async Task<bool> Insert(Category entity, CancellationToken cancellationToken = default)
         {
-            throw new NotImplementedException();
+            return await _repository.Insert(entity, cancellationToken);
         }
 
-        public Task<bool> Insert(Category entity, CancellationToken cancellationToken = default)
+        public async Task<bool> Update(Category entity, CancellationToken cancellationToken = default)
         {
-            throw new NotImplementedException();
+            return await _repository.Update(entity, cancellationToken);
         }
 
-        public Task<bool> Update(Category entity, CancellationToken cancellationToken = default)
+        public async Task<IList<Category>> GetAllEntites()
         {
-            throw new NotImplementedException();
+            return _repository.Entity.ToList();
         }
 
-        Task<IList<Category>> IService<Category>.GetAllEntites()
-        {
-            throw new NotImplementedException();
-        }
+        
     }
 }
