@@ -15,9 +15,9 @@ namespace CoffeeBaz.Service.ProductService
         {
             _repository = repository;
         }
-        public Task<bool> Delete(Product entity, CancellationToken cancellationToken = default)
+        public async Task<bool> Delete(Product entity, CancellationToken cancellationToken = default)
         {
-            throw new NotImplementedException();
+            return await _repository.Delete(entity, cancellationToken);
         }
 
 

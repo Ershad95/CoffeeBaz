@@ -32,6 +32,7 @@
             }
             <hr />
             <div>
+                <i class="oi oi-delete" @onclick="Delete"></i>
                 <NavLink href=@($"product/upsert/{dd.Id}")>
                     <i class="oi oi-pencil"></i>
                 </NavLink>
@@ -44,10 +45,14 @@
     public string parentClass { get; set; }
     [Parameter]
     public ProductDTO dd { get; set; }
+    [Parameter]
+    public EventCallback<ProductDTO> DeleteEventCallback { get; set; }
     private void Delete()
     {
+        DeleteEventCallback.InvokeAsync(dd);
         service.Delete(mapper.Map<Product>(dd));
-        parentClass += " none_display";
+        
+
     }
     protected override void OnInitialized()
     {

@@ -19,7 +19,7 @@
         {
             foreach (var table in tables)
             {
-                <ProductComponent dd=table></ProductComponent>
+                <ProductComponent DeleteEventCallback="@DeleteItem" dd=table></ProductComponent>
             }
         }
         else
@@ -37,8 +37,12 @@
         tables = new List<ProductDTO>();
         var data =  service.GetAllEntites();
         tables = mapper.Map<IList<Product>,IList<ProductDTO>>(data.Result);
-        
+
         return base.OnInitializedAsync();
+    }
+    private void DeleteItem(ProductDTO product)
+    {
+        tables.Remove(product);
     }
     protected override Task OnAfterRenderAsync(bool firstRender)
     {
