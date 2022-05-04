@@ -40,5 +40,10 @@ namespace CoffeeBaz.Service.ProductService
         {
             return _repository.Entity.ToList();
         }
+
+        public async Task<IList<Product>> GetAllProductByCategory(int categoryId)
+        {
+           return _repository.Entity.Where(x => x.CatergoryId == categoryId).ToList();
+        }
     }
 }

@@ -1,0 +1,81 @@
+﻿@page "/menu/{tableId:int}";
+@page "/menu";
+@inject IJSRuntime JSRuntime;
+@using CoffeeBaz.Core.Utility
+@using System.Text.Json
+@inject ICategoryService _categoryService;
+@inject IProductService _productService;
+@inject IMapper mapper;
+<div>
+    @{
+        if (CheckPrice)
+        {
+            <Alert title="لطفا از منو ایتمی را انتخاب کنید" typeAlert=Alert.TypeAlert.Danger></Alert>
+        }
+    }
+    <h1 class="text-center">منوی کافه باز</h1>
+    @{
+        foreach (var category in categoryDTOs)
+        {
+            <div class="row">
+                <div class="col-md-12">
+                    <ul>
+                        <li>
+                            <p>@category.Name</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr />
+            @foreach (var product in PrepareProducts(category.Id))
+            {
+                <div class="row">
+                    <div class="col-md-4">@product.Name</div>
+                    <div class="col-md-4">@product.Price.TomanPrice()</div>
+                    <div class="col-md-4">
+                        <span id="pludBtn" @onclick="()=>plus(product.Id,category.Id,product.Price)" class="btn btn-success"><i class="fa fa-plus"/></span>
+                        <counter id="counter_@product.Id" class="text-dark">0</counter>
+                        <span id="minBtn" @onclick="()=>min(product.Id,category.Id,product.Price)" class="btn btn-warning"><i class="fa fa-minus"/></span>
+
+                    </div>
+                </div>
+                <hr />
+            }
+        }
+    }
+</div>
+<button class="btn btn-success" @onclick="SubmitReq" disabled=@CheckPrice>
+    ثبت درخواست
+</button>
+
+@code {
+
+    private class JsonDeserialize
+    {
+        public int id{ get; set; }
+        public int count{ get; set; }
+        public decimal price{ get; set; }
+    }
+    async void SubmitReq()
+    {
+        var reqObj = JsonSerializer
+                        .Deserialize<List<JsonDeserialize>>
+                        (await JSRuntime.InvokeAsync<string>("RequestList"));
+
+        var totalPrice = reqObj.Sum(x => x.price * x.count);
+        CheckPrice = totalPrice <= 0;
+    }
+    public bool CheckPrice { get; set; } = false;
+    [Parameter]
+    public int tableId { get; set; }
+    private async void plus(int id,int catId,decimal price)=> await JSRuntime.InvokeVoidAsync("Counter",1,id,price);
+    private async void min(int id,int catId,decimal price)=>  await JSRuntime.InvokeVoidAsync("Counter",-1,id,price);
+    private IList<ProductDTO> PrepareProducts(int catergoryId)=> mapper.Map<IList<Product>, IList<ProductDTO>>(_productService.GetAllProductByCategory(catergoryId).Result);
+    private IList<CategoryDTO> categoryDTOs;
+    protected async override Task<Task> OnInitializedAsync()
+    {
+        categoryDTOs = mapper.Map<IList<Category>, IList<CategoryDTO>>(await _categoryService.GetAllEntites());
+        CheckPrice = false;
+        return base.OnInitializedAsync();
+    }
+}

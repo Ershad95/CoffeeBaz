@@ -29,7 +29,32 @@
     </div>
 
     <script src="_framework/blazor.server.js"></script>
-
+    <script>
+        let sync = [];
+        function RequestList(){
+            return JSON.stringify(sync);
+        }
+        function Counter(flag,productId,price=0)
+        {
+             let item = document.getElementById("counter_"+productId);
+             let oldNumber= parseInt(item.innerHTML);
+             
+            if(flag>0){
+                item.innerHTML = oldNumber+1;
+            }else{
+                if(oldNumber<=0)
+                    return;
+            item.innerHTML = oldNumber-1;
+            }
+            if(!sync.some(x=>x.id == productId))
+            {
+                sync.push({id:productId,count:parseInt(item.innerHTML),price : price});
+            }else{
+               sync =  sync.filter(x=>x.id != productId);
+               sync.push({id:productId,count:parseInt(item.innerHTML),price});
+            }
+        }
+    </script>
 </body>
 
 </html>

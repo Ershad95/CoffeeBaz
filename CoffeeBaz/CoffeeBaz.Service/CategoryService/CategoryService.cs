@@ -40,7 +40,8 @@ namespace CoffeeBaz.Service.CategoryService
         {
             return _repository.Entity.ToList();
         }
-
         
+
+
     }
 }

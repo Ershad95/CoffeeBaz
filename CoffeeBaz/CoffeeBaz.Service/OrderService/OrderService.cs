@@ -1,4 +1,5 @@
-﻿using CoffeeBaz.Data.Domain;
+﻿using CoffeeBaz.Data.DataRepository;
+using CoffeeBaz.Data.Domain;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,11 @@ namespace CoffeeBaz.Service.OrderService
 {
     public class OrderService : IOrderService
     {
+        IRepository<Order> _repository;
+        public OrderService(IRepository<Order> repository)
+        {
+            _repository = repository;
+        }
         public Task<bool> Delete(Order entity, CancellationToken cancellationToken = default)
         {
             throw new NotImplementedException();
@@ -24,9 +30,9 @@ namespace CoffeeBaz.Service.OrderService
             throw new NotImplementedException();
         }
 
-        public Task<bool> Insert(Order entity, CancellationToken cancellationToken = default)
+        public async Task<bool> Insert(Order entity, CancellationToken cancellationToken = default)
         {
-            throw new NotImplementedException();
+            return await _repository.Insert(entity, cancellationToken);   
         }
 
         public Task<bool> Update(Order entity, CancellationToken cancellationToken = default)

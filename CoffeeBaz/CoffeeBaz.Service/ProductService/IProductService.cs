@@ -9,6 +9,6 @@ namespace CoffeeBaz.Service.ProductService
 {
     public interface IProductService:IService<Product>
     {
-
+       Task<IList<Product>> GetAllProductByCategory(int categoryId);
     }
 }

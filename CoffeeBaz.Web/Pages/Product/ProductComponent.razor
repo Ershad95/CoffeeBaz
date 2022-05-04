@@ -1,4 +1,5 @@
 ﻿@using AutoMapper
+@using CoffeeBaz.Core.Utility
 @using CoffeeBaz.Data.Domain
 @using CoffeeBaz.Shared.DTO
 @using CoffeeBaz.Service.ProductService;
@@ -12,7 +13,7 @@
         </div>
         <div class="card-body">
             <label> قیمت : </label>
-            <span>@dd.Price</span>
+            <span>@dd.Price.TomanPrice()</span>
             <hr />
             <label>نوشیدنی/خوردنی فعال : </label>
             <span>@(dd.Active? "بله":"خیر")</span>
@@ -51,7 +52,6 @@
     {
         DeleteEventCallback.InvokeAsync(dd);
         service.Delete(mapper.Map<Product>(dd));
-        
 
     }
     protected override void OnInitialized()
