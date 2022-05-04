@@ -45,14 +45,15 @@ namespace CoffeeBaz.Data.DataRepository
 
         public async Task<T> GetById(int id,CancellationToken cancellationToken)
         {
-            return await Entity.FirstOrDefaultAsync(x => x.Id == id,cancellationToken);
+            return await Entity
+                .FirstOrDefaultAsync(x => x.Id == id,cancellationToken);
         }
 
         public async Task<bool> Insert(T entity,CancellationToken cancellationToken=default)
         {
             try
             {
-                _coffeBazContext.Add(entity);
+                await _coffeBazContext.AddAsync(entity,cancellationToken);
                 await _coffeBazContext.SaveChangesAsync(cancellationToken);
                 return true;
             }

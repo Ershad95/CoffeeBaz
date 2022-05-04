@@ -1,0 +1,27 @@
+﻿@page "/product/{id:int}"
+@{
+    Layout = "_Layout";
+}
+@using CoffeeBaz.Core.Utility
+@model CoffeeBaz.Web.Pages.productDetailsModel
+<div class="container-fluid">
+    <div class="row" style="text-align:center">
+        <img style="width:50%" src="/img/coffe.jpg" />
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    @Model.productDto.Name
+                </div>
+                <div class="card-body">
+                    @Model.productDto.Description
+                </div>
+                <div class="card-footer">
+                    @Model.productDto.Price.TomanPrice()
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
